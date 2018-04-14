@@ -1,32 +1,32 @@
-#Sentiment Analysis
-  #Dependencies
-  import tweepy
-  import json
-  import numpy as np
-  import pandas as pd
-  from datetime import datetime
-  import matplotlib.pyplot as plt
-  from matplotlib import style
+#Sentiment Analysis of Tweets from Various News Media Houses
+    #Dependencies
+    import tweepy
+    import json
+    import numpy as np
+    import pandas as pd
+    from datetime import datetime
+    import matplotlib.pyplot as plt
+    from matplotlib import style
 
-  from config import consumer_key, consumer_secret, access_token, access_token_secret
-  from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+    from config import consumer_key, consumer_secret, access_token, access_token_secret
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-  #Setup Tweepy API Authentication
-  auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-  auth.set_access_token(access_token, access_token_secret)
-  api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
-  analyzer = SentimentIntensityAnalyzer()
-  
-  newsHouses  = ("@BBCNews", "@CBSNews", "@CNNnewsroom", "@FoxNews", "@nytimes")
-  
-  #array for sentiments 
-  sentiments = []
-  numTweets= 100
-  
-  for media in newsHouses:
-      counter = 1
-      #Get all tweets from home feed
-      newsTweets = api.user_timeline(media, count= numTweets)
+    #Setup Tweepy API Authentication
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+    api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
+    analyzer = SentimentIntensityAnalyzer()
+
+    newsHouses  = ("@BBCNews", "@CBSNews", "@CNNnewsroom", "@FoxNews", "@nytimes")
+
+    #array for sentiments 
+    sentiments = []
+    numTweets= 100
+
+    for media in newsHouses:
+        counter = 1
+        #Get all tweets from home feed
+        newsTweets = api.user_timeline(media, count= numTweets)
 
       #Loop through all tweets 
       for tweet in newsTweets:
