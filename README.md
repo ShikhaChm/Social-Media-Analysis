@@ -1,5 +1,6 @@
 #Sentiment Analysis of Tweets from Various News Media Houses
-    #Dependencies
+   #Dependencies
+    
     import tweepy
     import json
     import numpy as np
@@ -7,7 +8,7 @@
     from datetime import datetime
     import matplotlib.pyplot as plt
     from matplotlib import style
-
+    
     from config import consumer_key, consumer_secret, access_token, access_token_secret
     from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
