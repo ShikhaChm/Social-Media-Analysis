@@ -130,22 +130,22 @@ Each plot point reflects the compound sentiment of a tweet. Each plot point is s
       plt.show()
 
 ## Observations from the data and graphs:
-    - Looking at the scatter plot it looks like the spread of positive and negative comments 
-    are quite neutral across all media houses. However, Fox news tweets have more negative 
-    weightage of tweet sentiments while New York Times have more negative and neutral than 
-    positive tweet sentiments.
-    - I believe, it will depend on the kind of current events that have occured when we downloaded
-    the tweets data. For example, If a high intensity earthquake or tornado ocurred in a busy city,
-    the media houses are likely to tweet positively, supporting the affected families and individuals. 
-    And, if some shooting or terrorist attack happened, media houses are more likely to tweet with 
-    anger and negative sentiments from socio political angles. In both of these scenarios, the sentiment 
-    analysis may look entirely different than right now as there is always going to a bias of current 
-    news for small number of tweet analysis.
-    - From the bar graph we can see the average sentiment concluded from these 100 tweets(at the time of download).
-    The given graph shows at the moment of download, 
+  - Looking at the scatter plot it looks like the spread of positive and negative comments 
+  are quite neutral across all media houses. However, Fox news tweets have more negative 
+  weightage of tweet sentiments while New York Times have more negative and neutral than 
+  positive tweet sentiments.
+  - I believe, it will depend on the kind of current events that have occured when we downloaded
+  the tweets data. For example, If a high intensity earthquake or tornado ocurred in a busy city,
+  the media houses are likely to tweet positively, supporting the affected families and individuals. 
+  And, if some shooting or terrorist attack happened, media houses are more likely to tweet with 
+  anger and negative sentiments from socio political angles. In both of these scenarios, the sentiment 
+  analysis may look entirely different than right now as there is always going to a bias of current 
+  news for small number of tweet analysis.
+  - From the bar graph we can see the average sentiment concluded from these 100 tweets(at the time of download).
+  The given graph shows at the moment of download, 
          -- most neutral media house- CNN
          -- most negative media house- New York Times, CBS
-    - As the number of tweets(100) at a given time is quite less to conclude anything in general about
-    the kind of news sentiments any media house favors. But, with sufficiently large number of tweets
-    collected over months or years we would be able to see a more convincing trend or patterns of the
-    kind of sentiments each news media house represnts. 
+  - As the number of tweets(100) at a given time is quite less to conclude anything in general about
+   the kind of news sentiments any media house favors. But, with sufficiently large number of tweets
+   collected over months or years we would be able to see a more convincing trend or patterns of the
+   kind of sentiments each news media house represnts. 
