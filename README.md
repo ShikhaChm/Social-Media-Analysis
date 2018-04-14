@@ -143,8 +143,8 @@ Each plot point reflects the compound sentiment of a tweet. Each plot point is s
   news for small number of tweet analysis.
   - From the bar graph we can see the average sentiment concluded from these 100 tweets(at the time of download).
   The given graph shows at the moment of download, 
-         -- most neutral media house- CNN
-         -- most negative media house- New York Times, CBS
+      - most neutral media house- CNN
+      - most negative media house- New York Times, CBS
   - As the number of tweets(100) at a given time is quite less to conclude anything in general about
    the kind of news sentiments any media house favors. But, with sufficiently large number of tweets
    collected over months or years we would be able to see a more convincing trend or patterns of the
